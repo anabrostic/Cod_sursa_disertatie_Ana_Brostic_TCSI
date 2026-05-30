@@ -143,7 +143,7 @@ def preprocess(df):
 
 # 4. MODEL
 def build_autoencoder(input_dim):
-    # assert garanteaza compresie reala, bottleneck < input
+    # assert garanteaza compresia reala, bottleneck < input
     assert LATENT_DIM < input_dim, \
         f"bottleneck ({LATENT_DIM}) trebuie < input_dim ({input_dim}) pentru compresie reala"
 
